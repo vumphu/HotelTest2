@@ -257,7 +257,6 @@ def reservation_update(reservation_list, reservation_tree, guest_list, room_list
             valid_check += 1
         else:
         # check if new id is different from old id, if yes, check for duplication
-            if rid != reservation_tree.item(selected_reservation, 'values')[1]:
                 for room in room_list:
                     if room.get_rid() == rid:
                         break
@@ -273,7 +272,6 @@ def reservation_update(reservation_list, reservation_tree, guest_list, room_list
             valid_check += 1
         else:
         # check if new id is different from old id, if yes, check for duplication
-            if gid != reservation_tree.item(selected_reservation, 'values')[2]:
                 for guest in guest_list:
                     if guest.get_gid() == gid:
                         break
