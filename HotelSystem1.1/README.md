@@ -1,2 +1,0 @@
-# HotelSystem
-Testing
